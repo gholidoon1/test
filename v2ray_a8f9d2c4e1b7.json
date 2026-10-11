@@ -1,0 +1,44 @@
+{
+  "inbounds": [
+    {
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "settings": {
+        "udp": true
+      }
+    },
+    {
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http"
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "http",
+      "tag": "proxy",
+      "settings": {
+        "servers": [
+          {
+            "address": "maasdam-8-nl.nexorcdn.com",
+            "port": 14383,
+            "users": [
+              {
+                "user": "1dc2858402fdd82ec1b787e624c5cbba",
+                "pass": "S03_CdCg1f2uIfJv"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "maasdam-8-nl.nexorcdn.com"
+        }
+      }
+    }
+  ]
+}

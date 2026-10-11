@@ -1,0 +1,16 @@
+{
+  "outbounds": [
+    {
+      "type": "http",
+      "tag": "VeePN-maasdam-8-nl",
+      "server": "maasdam-8-nl.nexorcdn.com",
+      "server_port": 14383,
+      "username": "1dc2858402fdd82ec1b787e624c5cbba",
+      "password": "S03_CdCg1f2uIfJv",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-8-nl.nexorcdn.com"
+      }
+    }
+  ]
+}
