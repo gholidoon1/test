@@ -1,0 +1,38 @@
+{
+  "inbounds": [
+    {
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "settings": {
+        "udp": true
+      }
+    },
+    {
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http"
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "http",
+      "tag": "DotVPN-NL",
+      "settings": {
+        "servers": [
+          {
+            "address": "df4375a7a0463d069c15795b68e76170-f7e005f4b3cf244c.apohola.com",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "df4375a7a0463d069c15795b68e76170-f7e005f4b3cf244c.apohola.com"
+        }
+      }
+    }
+  ]
+}

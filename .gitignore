@@ -1,0 +1,4 @@
+update_veepn_sub.sh
+update_dotvpn_sub.sh
+.last_proxy_state
+.last_dotvpn_state
