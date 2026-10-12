@@ -1,4 +1,9 @@
 {
+  "dns": {
+    "servers": [
+      "https://1.1.1.1/dns-query"
+    ]
+  },
   "inbounds": [
     {
       "port": 10808,
@@ -6,22 +11,32 @@
       "protocol": "socks",
       "settings": {
         "udp": true
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls"],
+        "routeOnly": false
       }
     },
     {
       "port": 10809,
       "listen": "127.0.0.1",
-      "protocol": "http"
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls"],
+        "routeOnly": false
+      }
     }
   ],
   "outbounds": [
     {
       "protocol": "http",
-      "tag": "DotVPN-NL",
+      "tag": "DotVPN-US",
       "settings": {
         "servers": [
           {
-            "address": "df4375a7a0463d069c15795b68e76170-f7e005f4b3cf244c.apohola.com",
+            "address": "df4375a7a0463d069c15795b68e76170-9bb0e9fded93e708.apohola.com",
             "port": 443
           }
         ]
@@ -30,9 +45,24 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "df4375a7a0463d069c15795b68e76170-f7e005f4b3cf244c.apohola.com"
+          "serverName": "df4375a7a0463d069c15795b68e76170-9bb0e9fded93e708.apohola.com"
         }
       }
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "block"
     }
-  ]
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "network": "udp",
+        "port": 443,
+        "outboundTag": "block"
+      }
+    ]
+  }
 }
