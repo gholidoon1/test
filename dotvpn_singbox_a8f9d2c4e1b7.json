@@ -41,21 +41,21 @@
     {
       "type": "http",
       "tag": "DotVPN-US",
-      "server": "df4375a7a0463d069c15795b68e76170-539e50c132524739.apohola.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "df4375a7a0463d069c15795b68e76170-539e50c132524739.apohola.com"
-      }
-    },
-    {
-      "type": "http",
-      "tag": "DotVPN-US-Backup",
       "server": "df4375a7a0463d069c15795b68e76170-9bb0e9fded93e708.apohola.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
         "server_name": "df4375a7a0463d069c15795b68e76170-9bb0e9fded93e708.apohola.com"
+      }
+    },
+    {
+      "type": "http",
+      "tag": "DotVPN-US-Backup",
+      "server": "df4375a7a0463d069c15795b68e76170-4f2798bcbaf2a1ae.apohola.com",
+      "server_port": 443,
+      "tls": {
+        "enabled": true,
+        "server_name": "df4375a7a0463d069c15795b68e76170-4f2798bcbaf2a1ae.apohola.com"
       }
     },
     {
