@@ -1,4 +1,9 @@
 {
+  "dns": {
+    "servers": [
+      "https://1.1.1.1/dns-query"
+    ]
+  },
   "inbounds": [
     {
       "port": 10808,
@@ -6,12 +11,22 @@
       "protocol": "socks",
       "settings": {
         "udp": true
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls"],
+        "routeOnly": false
       }
     },
     {
       "port": 10809,
       "listen": "127.0.0.1",
-      "protocol": "http"
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls"],
+        "routeOnly": false
+      }
     }
   ],
   "outbounds": [
@@ -39,6 +54,21 @@
           "serverName": "maasdam-8-nl.nexorcdn.com"
         }
       }
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "block"
     }
-  ]
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "network": "udp",
+        "port": 443,
+        "outboundTag": "block"
+      }
+    ]
+  }
 }
