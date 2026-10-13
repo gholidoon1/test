@@ -36,7 +36,7 @@
       "settings": {
         "servers": [
           {
-            "address": "df4375a7a0463d069c15795b68e76170-4f2798bcbaf2a1ae.apohola.com",
+            "address": "df4375a7a0463d069c15795b68e76170-539e50c132524739.apohola.com",
             "port": 443
           }
         ]
@@ -45,7 +45,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "df4375a7a0463d069c15795b68e76170-4f2798bcbaf2a1ae.apohola.com"
+          "serverName": "df4375a7a0463d069c15795b68e76170-539e50c132524739.apohola.com"
         }
       }
     },
