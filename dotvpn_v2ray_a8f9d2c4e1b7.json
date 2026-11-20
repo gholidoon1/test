@@ -36,7 +36,7 @@
       "settings": {
         "servers": [
           {
-            "address": "df4375a7a0463d069c15795b68e76170-0c66a58858a795df.apache-iv.com",
+            "address": "df4375a7a0463d069c15795b68e76170-98005bea43f9ac33.apache-iv.com",
             "port": 443
           }
         ]
@@ -45,7 +45,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "df4375a7a0463d069c15795b68e76170-0c66a58858a795df.apache-iv.com"
+          "serverName": "df4375a7a0463d069c15795b68e76170-98005bea43f9ac33.apache-iv.com"
         }
       }
     },
