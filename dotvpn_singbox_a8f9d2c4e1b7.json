@@ -41,41 +41,41 @@
     {
       "type": "http",
       "tag": "DotVPN-US",
-      "server": "df4375a7a0463d069c15795b68e76170-240d6105b6ef86f0.apache-iv.com",
+      "server": "df4375a7a0463d069c15795b68e76170-3791fb4df2db250b.apache-iv.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "df4375a7a0463d069c15795b68e76170-240d6105b6ef86f0.apache-iv.com"
+        "server_name": "df4375a7a0463d069c15795b68e76170-3791fb4df2db250b.apache-iv.com"
       }
     },
     {
       "type": "http",
       "tag": "DotVPN-US-Backup",
-      "server": "df4375a7a0463d069c15795b68e76170-92ff472ddc24e5b7.apache-iv.com",
+      "server": "df4375a7a0463d069c15795b68e76170-0c66a58858a795df.apache-iv.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "df4375a7a0463d069c15795b68e76170-92ff472ddc24e5b7.apache-iv.com"
+        "server_name": "df4375a7a0463d069c15795b68e76170-0c66a58858a795df.apache-iv.com"
       }
     },
     {
       "type": "http",
       "tag": "DotVPN-NL",
-      "server": "df4375a7a0463d069c15795b68e76170-3384ac8a04c9dad9.apache-iv.com",
+      "server": "df4375a7a0463d069c15795b68e76170-a5eb90befa25a3e6.apache-iv.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "df4375a7a0463d069c15795b68e76170-3384ac8a04c9dad9.apache-iv.com"
+        "server_name": "df4375a7a0463d069c15795b68e76170-a5eb90befa25a3e6.apache-iv.com"
       }
     },
     {
       "type": "http",
       "tag": "DotVPN-FR",
-      "server": "df4375a7a0463d069c15795b68e76170-3384ac8a04c9dad9.apache-iv.com",
+      "server": "df4375a7a0463d069c15795b68e76170-8e928736d0f8dbdc.apache-iv.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "df4375a7a0463d069c15795b68e76170-3384ac8a04c9dad9.apache-iv.com"
+        "server_name": "df4375a7a0463d069c15795b68e76170-8e928736d0f8dbdc.apache-iv.com"
       }
     },
     {
